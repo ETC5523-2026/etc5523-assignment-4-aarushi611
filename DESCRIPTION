@@ -1,0 +1,20 @@
+Package: rolloutcompare
+Title: Compare COVID-19 Vaccination Rollouts in Australia and New Zealand
+Version: 0.4.1
+Authors@R: person("Aarushi", "Dandriyal", email = "36621617@student.monash.edu", role = c("aut", "cre"))
+Description: Explores historical vaccination coverage and weekly reported
+    COVID-19 cases in Australia and New Zealand during 2021 using a
+    packaged dataset, a summary function and an interactive Shiny app.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0)
+Roxygen: list(markdown = TRUE)
+Imports: bslib, shiny, utils
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+RoxygenNote: 7.3.1
+URL: https://github.com/ETC5523-2026/etc5523-assignment-4-aarushi611,
+    https://etc5523-2026.github.io/etc5523-assignment-4-aarushi611/
+BugReports: https://github.com/ETC5523-2026/etc5523-assignment-4-aarushi611/issues

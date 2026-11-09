@@ -1,0 +1,23 @@
+---
+title: "Methods and data preparation"
+---
+
+The package uses a pinned copy of the Our World in Data COVID-19 archive.
+Run `Rscript data-raw/prepare.R` from the repository root to rebuild the
+packaged dataset.
+
+The script selects Australia and New Zealand and keeps complete reporting
+weeks from Monday through Sunday in 2021. It verifies seven distinct dates and
+a single positive population value in each country-week, then checks that
+102 country-weeks remain.
+
+Weekly reported cases are summed and divided by population, then expressed per
+100,000 residents. The latest available coverage reading and its observation
+date are retained for each week. Missing observations stay missing.
+
+The milestone is the first available weekly observation at or above the
+chosen coverage threshold. The peak is the highest reported case rate within
+the chosen date range, with ties resolved in favour of the earliest week.
+The interval subtracts the milestone reporting week's Sunday from the peak
+reporting week's Sunday and divides by seven. This describes the order and
+distance between reporting weeks. It cannot establish vaccine effectiveness.

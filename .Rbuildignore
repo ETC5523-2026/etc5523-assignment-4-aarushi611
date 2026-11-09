@@ -1,0 +1,5 @@
+^data-raw$
+^[.]github$
+^_pkgdown[.]yml$
+^docs$
+^vignettes/articles$
