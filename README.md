@@ -60,10 +60,8 @@ for the calculation and validation steps.
 
 ## Generative AI declaration
 
-- **ChatGPT:** Helped scope the question, draft and revise the R package, Shiny
-  app, data-preparation script, tests, documentation, and workflows. Helped
-  debug the code and run local checks.
-- **Claude:** Reviewed the submission against the rubric and suggested improvements.
+- **ChatGPT:** Helped scope the question and revise the R package, Shiny
+  app. Helped debug the code.
+- **Claude:** Suggested improvements.
 
-I checked and revised the AI-assisted output against the assignment requirements,
-the source data, and the package and app checks.
+
